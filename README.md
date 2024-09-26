@@ -62,7 +62,7 @@ This project consists of the following Python files:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/personal-budget-tracker.git
+   git@github.com:Saivardhan347/Personal-Budget-Tracker.git
    ```
 2. Install dependencies:
    ```bash
