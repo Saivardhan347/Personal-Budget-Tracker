@@ -108,7 +108,7 @@ class BudgetTracker:
         with pd.ExcelWriter(self.filepath, engine="openpyxl") as writer:
             daily_df.to_excel(writer, sheet_name="Daily_Expense", index=False)
             monthly_df.to_excel(writer, sheet_name="Monthly_Expense", index=False)
-        print(f"Data saved to {self.filename}")
+        # print(f"Data saved to {self.filename}")
 
     def load_data(self):
         try:           
@@ -134,7 +134,7 @@ class BudgetTracker:
             self.expenses = list(daily_df["Expenses"])
             self.notes = list(daily_df["Notes"])
                 
-            print(f"Data loaded from {self.filename}")
+            # print(f"Data loaded from {self.filename}")
         except FileNotFoundError:
             print(f"No data file found with name {self.filename}")
             

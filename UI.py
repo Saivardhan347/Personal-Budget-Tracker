@@ -40,7 +40,6 @@ def income():
         tracker.load_data()
         tracker.add_income(income_date, income_amount)
         tracker.save_data()
-        print("Balance income = ")
         income()
     elif income_val == 3:
         options()
